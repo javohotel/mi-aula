@@ -20,7 +20,7 @@
     <link href="./assets/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="navbar sticky-top main-color-bg flex-md-nowrap p-0">
+    <header class="navbar main-color-bg flex-md-nowrap p-0">
       <a
         class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white"
         href="#"
@@ -66,7 +66,7 @@
             aria-expanded="false"
             aria-label="Toggle search"
           >
-            <svg class="bi"><use xlink:href="#search" /></svg>
+          <i class="bi bi-search"></i>
           </button>
         </li>
         <li class="nav-item text-nowrap">
@@ -79,7 +79,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <svg class="bi"><use xlink:href="#list" /></svg>
+          <i class="bi bi-list"></i>
           </button>
         </li>
       </ul>
@@ -94,9 +94,9 @@
       </div>
     </header>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div id="mainSidebar" class="sidebar col-md-3 col-lg-3 p-0">
+    <div class="contenedor">
+      <div class="mainRow">
+        <div id="mainSidebar" class="sidebar">
           <div
             class="offcanvas-md offcanvas-end"
             tabindex="-1"
@@ -128,7 +128,7 @@
                       width="24"
                       alt=""
                     />
-                    Módulo Sostenedor
+                    <span class="hideMenu">Módulo Sostenedor</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -138,7 +138,7 @@
                       width="24"
                       alt=""
                     />
-                    Módulo Apoderado
+                    <span class="hideMenu">Módulo Apoderado</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -148,7 +148,7 @@
                       width="24"
                       alt=""
                     />
-                    Libro Digital (LCD)
+                    <span class="hideMenu">Libro Digital (LCD)</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -158,7 +158,7 @@
                       width="24"
                       alt=""
                     />
-                    Módulo Matrícula
+                    <span class="hideMenu">Módulo Matrícula</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -168,7 +168,7 @@
                       width="24"
                       alt=""
                     />
-                    Configuración
+                    <span class="hideMenu">Configuración</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -178,7 +178,7 @@
                       width="24"
                       alt=""
                     />
-                    Contenidos
+                    <span class="hideMenu">Contenidos</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -188,7 +188,7 @@
                       width="24"
                       alt=""
                     />
-                    Mi Cuenta
+                    <span class="hideMenu">Mi Cuenta</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -198,13 +198,13 @@
                       width="24"
                       alt=""
                     />
-                    Administración
+                    <span class="hideMenu">Administración</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
                     <img src="./assets/iconos/pruebas.svg" width="24" alt="" />
-                    Pruebas en Línea
+                    <span class="hideMenu">Pruebas en Línea</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -214,19 +214,19 @@
                       width="24"
                       alt=""
                     />
-                    Estadísticas
+                    <span class="hideMenu">Estadísticas</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
                     <img src="./assets/iconos/busqueda.svg" width="24" alt="" />
-                    Búsqueda
+                    <span class="hideMenu">Búsqueda</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
                     <img src="./assets/iconos/salir.svg" width="24" alt="" />
-                    Salir
+                    <span class="hideMenu">Salir</span>
                   </a>
                 </li>
               </ul>
@@ -235,15 +235,14 @@
                 id="colpaseMenu"
                 href="#"
               >
-                <span class="colapseText">Colapsar menú</span>
-                <span class="colapseText" style="display: none;">Mostrar menú</span>
+                <span id="colapseText">Colapsar menú</span>
                 <i id="colapseIcon" class="bi bi-arrow-bar-left"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <main id="main" class="col-md-9 ms-sm-auto col-lg-9 px-md-4 bg-body-tertiary">
+        <main id="main" class="main-content">
           <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
           >
@@ -251,77 +250,6 @@
           </div>
         </main>
       </div>
-    </div>
-
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
-      <button
-        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-      >
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
     </div>
 
     <script src="./assets/js/jquery.js"></script>
