@@ -96,7 +96,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="sidebar col-md-3 col-lg-3 p-0">
+        <div id="mainSidebar" class="sidebar col-md-3 col-lg-3 p-0">
           <div
             class="offcanvas-md offcanvas-end"
             tabindex="-1"
@@ -235,14 +235,15 @@
                 id="colpaseMenu"
                 href="#"
               >
-                <span id="colapseText">Colapsar menú</span>
+                <span class="colapseText">Colapsar menú</span>
+                <span class="colapseText" style="display: none;">Mostrar menú</span>
                 <i id="colapseIcon" class="bi bi-arrow-bar-left"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4 bg-body-tertiary">
+        <main id="main" class="col-md-9 ms-sm-auto col-lg-9 px-md-4 bg-body-tertiary">
           <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
           >
@@ -322,6 +323,8 @@
         </li>
       </ul>
     </div>
+
+    <script src="./assets/js/jquery.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <script
