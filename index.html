@@ -12,7 +12,10 @@
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Bootstrap Iconos-->
-    <link href="./assets/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
     <link href="./assets/css/styles.css" rel="stylesheet" />
   </head>
@@ -43,7 +46,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mi cuenta</a>
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-person-fill"> </i>Mi cuenta</a
+                >
               </li>
             </ul>
           </div>
@@ -91,7 +96,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="sidebar col-md-3 col-lg-2 p-0">
+        <div class="sidebar col-md-3 col-lg-3 p-0">
           <div
             class="offcanvas-md offcanvas-end"
             tabindex="-1"
@@ -111,89 +116,133 @@
             <div
               class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
             >
-              <ul class="nav flex-column">
+              <ul class="nav flex-column" id="menuPrincipal">
                 <li class="nav-item">
                   <a
                     class="nav-link d-flex align-items-center gap-2 active"
                     aria-current="page"
                     href="#"
                   >
-                    <svg class="bi"><use xlink:href="#house-fill" /></svg>
+                    <img
+                      src="./assets/iconos/modulo_sostenedor.svg"
+                      width="24"
+                      alt=""
+                    />
                     Módulo Sostenedor
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#file-earmark" /></svg>
+                    <img
+                      src="./assets/iconos/modulo_apoderado.svg"
+                      width="24"
+                      alt=""
+                    />
                     Módulo Apoderado
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#cart" /></svg>
+                    <img
+                      src="./assets/iconos/libro_digital.svg"
+                      width="24"
+                      alt=""
+                    />
                     Libro Digital (LCD)
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#people" /></svg>
+                    <img
+                      src="./assets/iconos/modulo_matricula.svg"
+                      width="24"
+                      alt=""
+                    />
                     Módulo Matrícula
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#graph-up" /></svg>
+                    <img
+                      src="./assets/iconos/configuracion.svg"
+                      width="24"
+                      alt=""
+                    />
                     Configuración
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
+                    <img
+                      src="./assets/iconos/contenidos.svg"
+                      width="24"
+                      alt=""
+                    />
                     Contenidos
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
-                    Mu Cuenta
+                    <img
+                      src="./assets/iconos/mi_cuenta.svg"
+                      width="24"
+                      alt=""
+                    />
+                    Mi Cuenta
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
+                    <img
+                      src="./assets/iconos/administracion.svg"
+                      width="24"
+                      alt=""
+                    />
                     Administración
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
+                    <img src="./assets/iconos/pruebas.svg" width="24" alt="" />
                     Pruebas en Línea
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
+                    <img
+                      src="./assets/iconos/estadisticas.svg"
+                      width="24"
+                      alt=""
+                    />
                     Estadísticas
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
+                    <img src="./assets/iconos/busqueda.svg" width="24" alt="" />
                     Búsqueda
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#">
-                    <svg class="bi"><use xlink:href="#puzzle" /></svg>
+                    <img src="./assets/iconos/salir.svg" width="24" alt="" />
                     Salir
                   </a>
                 </li>
               </ul>
+              <a
+                class="nav-link text-md-end align-items-center gap-2"
+                id="colpaseMenu"
+                href="#"
+              >
+                <span id="colapseText">Colapsar menú</span>
+                <i id="colapseIcon" class="bi bi-arrow-bar-left"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-body-tertiary">
+        <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4 bg-body-tertiary">
           <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
           >
