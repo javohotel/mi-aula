@@ -1,6 +1,18 @@
+@import url('./tablets.css');
+@import url('./mobile.css');
+
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 .bi {
@@ -206,15 +218,64 @@ div#sidebarMenu {
   th:last-child {
     width: 10%;
   }
+  a {
+    display: block;
+  }
 }
 
 .contenidos-card {
   width: 100%;
-  max-width: 400px;
+  max-width: 30%;
   border:0;
   min-height: 300px;
+}
+
+.contenidos-card-interior {
+  border:0;
+  flex:1;
 }
 
 .card {
   margin: 0px 20px 20px 0;
 }
+
+.accordion {
+  margin-top: 20px;
+  .accordion-item {
+    .accordion-button {
+      background-color: #5199d3;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+      &:after {
+        background-image: none;
+      }
+    }
+  }
+  ul {
+    li {
+      padding: 10px 0;
+    }
+    list-style-type: none;
+    a {
+      display: flex;
+      justify-content: space-between;
+    }
+    i {
+      margin-right: 20px;
+    }
+    i:before {
+      background-color: red;
+      color: #fff;
+      padding: 5px;
+      font-size: 22px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.accordion-body {
+  padding: 0;
+}
+
