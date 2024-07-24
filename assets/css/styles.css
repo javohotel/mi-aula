@@ -13,6 +13,11 @@ a {
 
 h1 {
   margin-bottom: 20px;
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 18px ;
 }
 
 .bi {
@@ -209,7 +214,7 @@ div#sidebarMenu {
   }
   th, td {
     padding: 5px;
-    font-size: 14px;
+    font-size: 15px;
   }
   td:last-child {
     text-align: center;
