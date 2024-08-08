@@ -33,7 +33,7 @@
         />
       </a>
 
-      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -42,14 +42,20 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"
-                  ><i class="bi bi-telephone-fill"></i> Ayuda</a
-                >
+                  ><i class="bi bi-telephone-fill"></i> Ayuda</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="bi bi-person-fill"> </i>Mi cuenta</a
-                >
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill"> </i>Mi cuenta</a>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Datos de Conexión</a></li>
+                  <li><a class="dropdown-item" href="#">Administrar Cuenta</a></li>
+                  <li><a class="dropdown-item" href="#">Cambiar Perfil de Usuario</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: red;">Salir</a></li>
+                </ul>
               </li>
+             
             </ul>
           </div>
         </div>
@@ -231,7 +237,7 @@
                 </li>
               </ul>
               <a
-                class="nav-link text-md-end align-items-center gap-2"
+                class="nav-link text-md-end align-items-center gap-2 d-none d-sm-block"
                 id="colpaseMenu"
                 href="#"
               >
