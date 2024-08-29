@@ -200,6 +200,10 @@ div#sidebarMenu {
   -webkit-overflow-scrolling: touch;
 }
 
+.titulos-interiores {
+  font-size: 20px;
+}
+
 .btn-bd-primary {
   --bd-violet-bg: #5199d3;
   --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
@@ -262,21 +266,68 @@ div#sidebarMenu {
     display: block;
   }
 }
+.btn-action {
+  background-color: #E9416D;
+  border-color: #E9416D;
+  color:#fff
+}
+
+.btn-action:hover {
+  background-color: #e0194e;
+  border-color: #e0194e;
+  color:#fff;
+}
+
+.form-select {
+  background-color: #F7FAFC;
+  border:0
+}
+
+.filtros-container {
+  border-bottom: 2px solid #5199d3;
+}
+
+.filtro-btn {
+  background-color: #5199d3;
+  display: inline-block;
+  padding: 10px;
+  min-width: 200px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filtros {
+  padding-top: 15px;
+}
+
+.filtros-list p {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.form-check-input {
+  border-radius: 0px !important;
+  border: 2px solid #999;
+}
+
+.card {
+  margin: 0px 20px 20px 0;
+  width: 100%;
+  border:0;
+  border-radius: 20px;
+}
+.selectores {
+  padding: 30px;
+}
 
 .contenidos-card {
-  width: 100%;
   max-width: 30%;
-  border:0;
   min-height: 300px;
 }
 
 .contenidos-card-interior {
   border:0;
   flex:1;
-}
-
-.card {
-  margin: 0px 20px 20px 0;
 }
 
 .accordion {

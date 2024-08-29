@@ -18,6 +18,11 @@ $(document).ready(function() {
         colapseMenu();
     });
 
+    //Filtros
+    $('#filtros-btn-action').on('click', function() {
+        $('#filtros-display').toggle();
+    })
+
     function colapseMenu() {
         $('.hideMenu').toggleClass('menu-hide');
         $('#mainSidebar').toggleClass('colapsado');
