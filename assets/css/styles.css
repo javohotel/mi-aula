@@ -37,7 +37,6 @@ h5 {
 
 .main-content {
   width: 75%;
-  background-color: #EDF2F7;
   padding: 20px;
   transition: all ease .3s;
 }
@@ -124,6 +123,13 @@ div#sidebarMenu {
   
 }
 
+ul#menuPrincipal {
+  max-width: 95%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 30px;
+}
+
 .sidebar {
   .nav-link {
     font-size: 0.875rem;
@@ -135,8 +141,7 @@ div#sidebarMenu {
 }
 
 .sidebar .nav-link.active, .sidebar .nav-link:hover {
-  color: #fff;
-  background-color: #59bbab;
+  color: #5199d3;
 }
 
 .sidebar-heading {
@@ -244,9 +249,11 @@ div#sidebarMenu {
 
 .contenidos-table {
   width: 100%;
+  thead {
+    border-bottom: 1px solid #ccc;
+  }
   th {
-    color:#fff;
-    font-weight: 300;
+    color: #5199d3;
   }
   th, td {
     font-size: 15px;
@@ -311,7 +318,7 @@ div#sidebarMenu {
 }
 
 .card {
-  margin: 0px 20px 20px 0;
+  margin: 0px 20px 20px 10px;
   width: 100%;
   border:0;
   border-radius: 20px;
@@ -325,6 +332,10 @@ div#sidebarMenu {
   min-height: 300px;
 }
 
+.sombra {
+  box-shadow: 0px 0px 8px #c5c5c5;
+}
+
 .contenidos-card-interior {
   border:0;
   flex:1;
@@ -334,11 +345,12 @@ div#sidebarMenu {
   margin-top: 20px;
   .accordion-item {
     .accordion-button {
-      background-color: #5199d3;
-      color: #fff;
+      background-color: #EDF2F7;
+      color: #333;
       font-weight: bold;
       padding: 5px 20px;
       margin-bottom: 10px;
+      border:none;
       &:after {
         background-image: none;
       }
@@ -368,5 +380,15 @@ div#sidebarMenu {
 
 .accordion-body {
   padding: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: var(--bs-accordion-bg);
+  border:none;
 }
 
