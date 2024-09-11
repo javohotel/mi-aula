@@ -36,7 +36,7 @@ h5 {
 }
 
 .main-content {
-  width: 75%;
+  width: 92%;
   padding: 20px;
   transition: all ease .3s;
 }
@@ -46,7 +46,7 @@ h5 {
 }
 
 .sidebar {
-  width:25%;
+  width:18%;
   overflow: hidden;
   transition: all ease .3s;
 }
@@ -128,12 +128,13 @@ ul#menuPrincipal {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 .sidebar {
   .nav-link {
     font-size: 0.875rem;
-    padding: 18px;
+    padding: 12px 18px;
     font-weight: 500;
     color: #333;
     font-weight: bold;
@@ -141,7 +142,7 @@ ul#menuPrincipal {
 }
 
 .sidebar .nav-link.active, .sidebar .nav-link:hover {
-  color: #5199d3;
+  color: #793245;
 }
 
 .sidebar-heading {
@@ -210,7 +211,7 @@ ul#menuPrincipal {
 }
 
 .btn-bd-primary {
-  --bd-violet-bg: #5199d3;
+  --bd-violet-bg: #793245;
   --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
   --bs-btn-font-weight: 600;
@@ -235,11 +236,11 @@ ul#menuPrincipal {
 }
 
 .main-color-bg {
-  background-color: #5199d3;
+  background-color: #793245;
 }
 
 .main-color-text {
-  color: #5199d3;
+  color: #793245;
 }
 
 .cards-container {
@@ -253,7 +254,7 @@ ul#menuPrincipal {
     border-bottom: 1px solid #ccc;
   }
   th {
-    color: #5199d3;
+    color: #793245;
   }
   th, td {
     font-size: 15px;
@@ -291,11 +292,11 @@ ul#menuPrincipal {
 }
 
 .filtros-container {
-  border-bottom: 2px solid #5199d3;
+  border-bottom: 2px solid #793245;
 }
 
 .filtro-btn {
-  background-color: #5199d3;
+  background-color: #793245;
   display: inline-block;
   padding: 10px;
   min-width: 200px;
@@ -334,6 +335,11 @@ ul#menuPrincipal {
 
 .sombra {
   box-shadow: 0px 0px 8px #c5c5c5;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.sombra:hover {
+  box-shadow: 0px 0px 12px #999;
 }
 
 .contenidos-card-interior {
@@ -380,6 +386,21 @@ ul#menuPrincipal {
 
 .accordion-body {
   padding: 0;
+  li {
+  }
+  li:hover {
+    background-color: #f6f6f6;
+    a {
+      color:#793245;
+      font-weight: 600;
+    }
+  }
+}
+
+#menuAccordion {
+  li a {
+    display: block;
+  }
 }
 
 .accordion-button:not(.collapsed) {
