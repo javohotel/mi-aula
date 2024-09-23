@@ -28,84 +28,79 @@
       alt=""
     /> Modulo Sostenedor</h1>
 
-    <div class="cards-container">
-      <div class="card">
-        <div class="card-body ">
-          <h4 class="card-title titulos-interiores">informacion Matrícula</h4>
 
-          <div class="filtros-container">
-           
-            <a href="#" class="filtro-btn" id="filtros-btn-action">
-              Filtro Búsqueda
-            </a>
-            
-            <div class="filtros" id="filtros-display" style="display: none;">
-              <p>Seleccione tipo de informes</p>
-              <div class="filtros-list d-flex">
-                <p>
-                  <input class="form-check-input" type="checkbox" value="sostenedor" id="sostenedor">
-                  <label class="form-check-label" for="sostenedor">
-                    Informe por sostenedor
-                  </label>
-                </p>
-                <p>
-                  <input class="form-check-input" type="checkbox" value="colegio" id="colegio">
-                  <label class="form-check-label" for="colegio">
-                    Informe por colegio
-                  </label>
-                </p>
-                <p>
-                  <input class="form-check-input" type="checkbox" value="curso" id="curso">
-                  <label class="form-check-label" for="curso">
-                    Informe por curso
-                  </label>
-                </p>
-              </div>
-            </div>
+      <h4 class="titulos-interiores">Informacion Matrícula</h4>
+
+      <div class="filtros-container">
+        
+        <a href="#" class="filtro-btn" id="filtros-btn-action">
+          Filtro Búsqueda
+        </a>
+        
+        <div class="filtros" id="filtros-display" style="display: none;">
+          <p>Seleccione tipo de informes</p>
+          <div class="filtros-list d-flex">
+            <p>
+              <input class="form-check-input" type="checkbox" value="sostenedor" id="sostenedor">
+              <label class="form-check-label" for="sostenedor">
+                Informe por sostenedor
+              </label>
+            </p>
+            <p>
+              <input class="form-check-input" type="checkbox" value="colegio" id="colegio">
+              <label class="form-check-label" for="colegio">
+                Informe por colegio
+              </label>
+            </p>
+            <p>
+              <input class="form-check-input" type="checkbox" value="curso" id="curso">
+              <label class="form-check-label" for="curso">
+                Informe por curso
+              </label>
+            </p>
           </div>
-
-          <form class="selectores">
-            <div class="row g-4 gx-5">
-              <div class="col-md-6">
-                <label for="comuna" class="form-label">Comuna</label>
-                <select id="comuna" class="form-select">
-                  <option selected>Opcion...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="colegios" class="form-label">Colegios</label>
-                <select id="colegios" class="form-select">
-                  <option selected>Seleccione colegio</option>
-                  <option>...</option>
-                </select>
-              </div>
-  
-              <div class="col-md-6">
-                <label for="plan" class="form-label">Año plan de estudios</label>
-                <select id="plan" class="form-select">
-                  <option selected>Seleccione un año</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="curso" class="form-label">Curso</label>
-                <select id="curso" class="form-select">
-                  <option selected>Seleccione un curso</option>
-                  <option>...</option>
-                </select>
-              </div>
-            </div>
-           
-            <div class="d-grid col-2 mx-auto" style="margin-top: 30px;">
-              <button type="submit" class="btn btn-action">Generar informe</button>
-            </div>
-          </form>
-
         </div>
       </div>
 
-    </div>
+      <form class="selectores">
+        <div class="row g-4 gx-5">
+          <div class="col-md-6">
+            <label for="comuna" class="form-label">Comuna</label>
+            <select id="comuna" class="form-select">
+              <option selected>Opcion...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="colegios" class="form-label">Colegios</label>
+            <select id="colegios" class="form-select">
+              <option selected>Seleccione colegio</option>
+              <option>...</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="plan" class="form-label">Año plan de estudios</label>
+            <select id="plan" class="form-select">
+              <option selected>Seleccione un año</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="curso" class="form-label">Curso</label>
+            <select id="curso" class="form-select">
+              <option selected>Seleccione un curso</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="d-grid col-2 mx-auto" style="margin-top: 30px;">
+          <button type="submit" class="btn btn-action">Generar informe</button>
+        </div>
+      </form>
+
+
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>

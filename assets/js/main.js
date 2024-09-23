@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
     //Navegacion interna
-    $('#navegacion-interna').on('click', 'a', function(e) {
+    $('#menuPrincipal').on('click', 'a', function(e) {
         e.preventDefault();
+        if( $(this).attr('id') == 'colpaseMenu' ) return;
         $('iframe').attr('src', $(this).attr('href'));
     } )
 

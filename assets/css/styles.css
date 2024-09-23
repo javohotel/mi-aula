@@ -208,6 +208,7 @@ ul#menuPrincipal {
 
 .titulos-interiores {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-bd-primary {
@@ -243,6 +244,10 @@ ul#menuPrincipal {
   color: #793245;
 }
 
+hr {
+  border-top-color:#793245;
+}
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -275,19 +280,19 @@ ul#menuPrincipal {
   }
 }
 .btn-action {
-  background-color: #E9416D;
-  border-color: #E9416D;
+  background-color: #F8BC43;
+  border-color: #F8BC43;
   color:#fff
 }
 
 .btn-action:hover {
-  background-color: #e0194e;
-  border-color: #e0194e;
+  background-color: #d99918;
+  border-color: #d99918;
   color:#fff;
 }
 
-.form-select {
-  background-color: #F7FAFC;
+.form-select, .form-control {
+  background-color: #F7F3F2;
   border:0
 }
 
@@ -324,8 +329,14 @@ ul#menuPrincipal {
   border:0;
   border-radius: 20px;
 }
-.selectores {
+.accordion-body {
   padding: 30px;
+}
+
+.card-body {
+  .accordion-body {
+    padding: 0px;
+  }
 }
 
 .contenidos-card {
@@ -347,11 +358,15 @@ ul#menuPrincipal {
   flex:1;
 }
 
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 .accordion {
   margin-top: 20px;
   .accordion-item {
     .accordion-button {
-      background-color: #EDF2F7;
+      background-color: #EEE2DD;
       color: #333;
       font-weight: bold;
       padding: 5px 20px;
@@ -384,8 +399,16 @@ ul#menuPrincipal {
   }
 }
 
+.accordion-big {
+  .accordion-item {
+    .accordion-button {
+      padding: 15px 20px;
+    }
+  }
+}
+
 .accordion-body {
-  padding: 0;
+
   li {
   }
   li:hover {
