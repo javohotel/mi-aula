@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Mi Aula</title>
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+    <!-- Bootstrap Iconos-->
+    <link
+      href="./assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <h1><img
+      src="./assets/iconos/pruebas.svg"
+      width="48"
+      alt=""
+    /> Pruebas en Linea</h1>
+
+    <div class="accordion accordion-big" >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <span class="accordion-button" >
+            Generador de Evaluaciones
+          </span>
+        </h2>
+      </div>
+    </div>
+
+   
+    <p class="text-center" style="margin-top: 30px;">
+      Seleccione los parámetros requeridos para realizar la búsqueda de preguntas para la evaluación que desea crear.
+    </p>
+    <div class="row agenda-docente" style="max-width: 80%; margin: auto;">
+      <div class="col-md-6 d-grid">
+        <a href="#" class="btn main-color-bg">
+          Link al video de Generacion de Evaluaciones
+        </a>
+        </div>
+        <div class="col-md-6 d-grid">
+        <a href="#" class="btn main-color-bg">
+          Cargar Preguntas
+        </a>
+      </div>
+    </div>
+
+    <form class="selectores" style="margin-top: 30px;">
+      <div class="row g-4 gx-5">
+        <div class="col-md-6">
+          <label for="Tipodeevaluacion" class="form-label">Tipo de evaluacion</label>
+          <select id="Tipodeevaluacion" class="form-select">
+            <option selected>Seleccione tipo de evaluacion...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="curso" class="form-label">Curso</label>
+          <select id="curso" class="form-select">
+            <option selected>Seleccione Curso</option>
+            <option>...</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="Asignatura" class="form-label">Asignatura</label>
+          <select id="Asignatura" class="form-select">
+            <option selected>Seleccione Asignatura</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="filtros">
+        <p>Objetivos Aprendizajes</p>
+        <div class="filtros-list d-flex">
+          <p>
+            <input class="form-check-input" type="checkbox" value="basales" id="basales">
+            <label class="form-check-label" for="basales">
+              Aprendizajes basales
+            </label>
+          </p>
+          <p>
+            <input class="form-check-input" type="checkbox" value="complementarios" id="complementarios">
+            <label class="form-check-label" for="complementarios">
+              Aprendizajes complementarios
+            </label>
+          </p>
+          <p>
+            <input class="form-check-input" type="checkbox" value="transversales" id="transversales">
+            <label class="form-check-label" for="transversales">
+              Aprendizajes transversales
+            </label>
+          </p>
+          <p>
+            <input class="form-check-input" type="checkbox" value="Habilidades" id="Habilidades">
+            <label class="form-check-label" for="Habilidades">
+              Habilidades
+            </label>
+          </p>
+          <p>
+            <input class="form-check-input" type="checkbox" value="Actitudes" id="Actitudes">
+            <label class="form-check-label" for="Actitudes">
+              Actitudes
+            </label>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row g-4 gx-5">
+        <p>Características de Evaluación</p>
+        <div class="col-md-3">
+          <label for="preguntas" class="form-label">Cantidad de preguntas</label>
+          <input type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-1 d-none d-sm-none d-md-block">
+          <i class="bi bi-chevron-right" style="font-size: 30px; margin-top: 24px;"></i>
+        </div>
+
+        <div class="col-md-1 col-6" >
+          <label for="faciles" class="form-label">Fáciles</label>
+          <input id="faciles" type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-1 col-6">
+          <label for="Medianas" class="form-label">Medianas</label>
+          <input id="Medianas" type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-1">
+          <label for="preguntas" class="form-label">Dificiles</label>
+          <input id="Dificiles" type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-3">
+          <label for="alternativas" class="form-label">Cantidad de alternativas</label>
+          <select id="alternativas" class="form-select">
+            <option selected>Seleccione</option>
+            <option>...</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="duracion" class="form-label">Duración (minutos)</label>
+          <input id="duracion" type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-2">
+          <label for="minimo" class="form-label">Puntaje minimo</label>
+          <input type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-2">
+          <label for="maximo" class="form-label">Puntaje máximo</label>
+          <input type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-4">
+          <label for="puntaje" class="form-label">Tipo de cálculo de puntaje ponderado</label>
+          <input type="text" class="form-control" >
+        </div>
+
+        <div class="col-md-4">
+          <label for="puntaje" class="form-label">Fórmula general de cálculo</label>
+          <input type="text" class="form-control" >
+        </div>
+
+
+
+      </div>
+      
+      <div class="d-grid col-2 mx-auto" style="margin-top: 30px;">
+        <button type="submit" class="btn btn-action">Siguiente</button>
+      </div>
+    </form>
+    
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

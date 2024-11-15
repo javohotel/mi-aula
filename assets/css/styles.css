@@ -215,6 +215,12 @@ ul#menuPrincipal {
 
 .main-color-bg {
   background-color: #793245;
+  color: #fff;
+}
+
+.main-color-bg:hover {
+  background-color: #461522;
+  color: #fff;
 }
 
 .main-color-text {
@@ -223,6 +229,7 @@ ul#menuPrincipal {
 
 hr {
   border-top-color:#793245;
+  border-top-width: 2px;
 }
 
 .cards-container {
@@ -290,9 +297,12 @@ hr {
   padding-top: 15px;
 }
 
-.filtros-list p {
+.filtros-list {
+  flex-wrap: wrap;
+  p {
   margin-right: 20px;
   cursor: pointer;
+  }
 }
 
 .form-check-input {
@@ -413,6 +423,72 @@ hr {
   border:none;
 }
 
+.agenda-docente {
+  a {
+    margin-bottom: 10px;
+  }
+}
+
+.bloques {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #793245;
+  flex-wrap: wrap;
+  .bloque {
+    display: flex;
+    p {
+      margin-bottom: 0;
+    }
+    .cuadrado {
+      width: 30px;
+      display: flex;
+      align-items: center;
+      span {
+        display: block;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 7rem 0; }
+
+.form-control:active, .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  
+}
+
+.form-control:focus {
+  background-color: #F6f6f6;
+}
+
+#calendar {
+  margin: 0 auto; }
+  #calendar .fc-view-container {
+    background-color: #fff;
+}
+  #calendar .fc-toolbar.fc-header-toolbar .fc-center {
+    display: block; }
+
+#calendar-container {
+ }
+
+.fc-header-toolbar {
+  /*
+    the calendar will be butting up against the edges,
+    but let's scoot in the header's buttons
+    */
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+
+
 
 /*------------------------------------- Tablet ------------------------------------ */
 
@@ -465,4 +541,14 @@ hr {
     display: block;
   }
   
+}
+
+@media (max-width: 767.98px) {
+  .fc-toolbar {
+    display: block !important;
+    text-align: center; }
+    .fc-toolbar .fc-center {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 20px; } 
 }
