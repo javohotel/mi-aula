@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Mi Aula</title>
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+    <!-- Bootstrap Iconos-->
+    <link
+      href="./assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <h1><img
+      src="./assets/iconos/configuracion.svg"
+      width="48"
+      alt=""
+    /> Configuracion</h1>
+
+    <div class="accordion accordion-big" >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <span class="accordion-button" >
+            Datos base gestión del colegio
+          </span>
+        </h2>
+      </div>
+    </div>
+
+
+    <div class="configuration-tables-container">
+      <h5>Periodos académicos</h5>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Año</th>
+            <th scope="col">Tipo de periodo</th>
+            <th scope="col">Fecha inicial</th>
+            <th scope="col">Fecha final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024</th>
+            <td>Semestral</td>
+            <td>04-03-2024 </td>
+            <td>04-03-2024 </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="d-flex justify-content-end">
+        <select id="ano1" class="form-select">
+          <option selected>2024</option>
+          <option>...</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="configuration-tables-container">
+      <h5>Periodos académicos</h5>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Año</th>
+            <th scope="col">Tipo de periodo</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Hora inicial</th>
+            <th scope="col">Hora final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024</th>
+            <td>General</td>
+            <td>Educación Básica</td>
+            <td>08:45</td>
+            <td>15:45 </td>
+          </tr>
+          <tr>
+            <td>2024</th>
+            <td>Educación Parvularia</td>
+            <td>Horario de Pre-Básica</td>
+            <td>08:45</td>
+            <td>15:45 </td>
+          </tr>
+          <tr>
+            <td>2024</th>
+            <td>General</td>
+            <td>Educación Básica</td>
+            <td>08:45</td>
+            <td>15:45 </td>
+          </tr>
+          <tr>
+            <td>2024</th>
+            <td>General</td>
+            <td>Horario de Pre-Básica</td>
+            <td>08:45</td>
+            <td>15:45 </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="d-flex justify-content-end">
+        <select id="ano1" class="form-select">
+          <option selected>2024</option>
+          <option>...</option>
+        </select>
+      </div>
+
+    </div>
+
+   <div class="configuration-tables-container">
+      <h5>Feriados nacionales</h5>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Descripción</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01-01-2024</td>
+            <td>Año Nuevo</td>
+          </tr>
+          <tr>
+            <td>29-03-2024</td>
+            <td>Viernes Santo</td>
+          </tr>
+          <tr>
+            <td>30-03-2024</td>
+            <td>Sábado Santo</td>
+          </tr>
+          <tr>
+            <td>01-05-2024</td>
+            <td>Día Nacional del Trabajo</td>
+          </tr>
+      
+          <tr>
+            <td>21-05-2024</td>
+            <td>Día de las Glorias Navales</td>
+          </tr>
+          <tr>
+            <td>09-06-2024</td>
+            <td>Elecciones Primarias Alcaldes y Gobernadores</td>
+          </tr>
+          <tr>
+            <td>20-06-2024</td>
+            <td>Día Nacional de los Pueblos Indígenas</td>
+          </tr>
+          <tr>
+            <td>29-06-2024</td>
+            <td>San Pedro y San Pablo</td>
+          </tr>
+          <tr>
+            <td>16-07-2024</td>
+            <td>Día de la Virgen del Carmen</td>
+          </tr>
+          <tr>
+            <td>15-08-2024</td>
+            <td>Asunción de la Virgen</td>
+          </tr>
+          <tr>
+            <td>18-09-2024</td>
+            <td>Independencia Nacional</td>
+          </tr>
+          <tr>
+            <td>19-09-2024</td>
+            <td>Día de las Glorias del Ejército</td>
+          </tr>
+          <tr>
+            <td>20-09-2024</td>
+            <td>Feriado Adicional Fiestas Patrias</td>
+          </tr>
+          <tr>
+            <td>12-10-2024</td>
+            <td>Encuentro de Dos Mundos</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="d-flex justify-content-end">
+        <select id="ano1" class="form-select">
+          <option selected>2024</option>
+          <option>...</option>
+        </select>
+      </div>
+    </div>
+  
+    
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
