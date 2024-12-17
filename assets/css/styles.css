@@ -497,6 +497,36 @@ hr {
   }
 }
 
+.school-documents {
+  padding: 20px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #793245;
+  div {
+    text-align: center;
+    margin: 0 10px;
+    max-width: 100px;
+  }
+  div:first-child {
+    max-width: 150px;
+  }
+}
+
+.form-section {
+  border-bottom: 1px solid #793245;
+  padding: 50px 0;
+  max-width: 100%;
+}
+
+.firma {
+  border: 1px solid #793245;
+  padding: 20px;
+  width: 180px;
+  min-height: 150px;
+  margin: 0 auto 20px;
+}
+
 
 /*------------------------------------- Tablet ------------------------------------ */
 

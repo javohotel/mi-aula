@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Mi Aula</title>
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+    <!-- Bootstrap Iconos-->
+    <link
+      href="./assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <h1><img
+      src="./assets/iconos/configuracion.svg"
+      width="48"
+      alt=""
+    /> Configuracion</h1>
+
+    <div class="accordion accordion-big" >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <span class="accordion-button" >
+           Administración: Datos institucionales
+          </span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="school-documents">
+      <div>
+        <img src="https://placehold.co/140x140" alt="">
+      </div>
+      <div>
+        <p>Reglamento interno</p>
+        <img src="./assets/images/pdf-icon.jpg" alt="">
+      </div>
+      <div>
+        <p>Reglamento evaluación</p>
+        <img src="./assets/images/pdf-icon.jpg" alt="">
+      </div>
+      <div>
+        <p>Reglamento educativo</p>
+        <img src="./assets/images/pdf-icon.jpg" alt="">
+      </div>
+      <div>
+        <p>Calendario recuperación</p>
+        <img src="./assets/images/pdf-icon.jpg" alt="">
+      </div>
+    </div>
+
+
+    <form action="">
+      <div class="form-section row g-4 gx-5">
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Nombre Cliente *</label>
+          <input type="text" class="form-control" placeholder="Colego Demo San Ramon" >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Código identificación (RBD) *</label>
+          <input type="text" class="form-control" placeholder="88.888-5" >
+        </div>
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Ley, D.S., D. 0 Resolución Exenta de reconocimiento oficial *</label>
+          <input type="text" class="form-control" placeholder="1234" >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Fecha de reconocimiento oficial *</label>
+          <input type="date" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Decreto Cooperador *</label>
+          <input type="text" class="form-control" placeholder="1234" >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Fecha de Decreto Cooperador *</label>
+          <input type="date" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Colegio/Escuela/Liceo con Jornada Escolar Completa *</label>
+          <input type="text" class="form-control" placeholder="JORNADA ESCOLAR COMPLETA " >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Jornada escolar</label>
+          <select id="jornada" class="form-select">
+            <option selected>Seleccione tipo de jornada</option>
+            <option>...</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-section row g-4 gx-5">
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Director *</label>
+          <input type="text" class="form-control" placeholder="Vicente Acevedo" >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Tipo de cliente</label>
+          <input type="text" class="form-control" placeholder="Corporación Municipal" >
+        </div>
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Dirección *</label>
+          <input type="text" class="form-control" placeholder="Avenida XYZ" >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Número dirección *</label>
+          <input type="text" class="form-control" placeholder="1234" >
+        </div>
+
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Télefonos *</label>
+          <input type="text" class="form-control" placeholder="+123456789" >
+        </div>
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Región</label>
+          <select id="region" class="form-select">
+            <option selected>Metropolitana</option>
+            <option>...</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Comuna</label>
+          <select id="comuna" class="form-select">
+            <option selected>Santiago</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="Primaria" class="form-label">Ciudad *</label>
+          <input type="text" class="form-control" placeholder="Talca " >
+        </div>
+      </div>
+
+      <div class="form-section row  g-4 gx-5">
+        <div class="col-md-6">
+          <p>OPCIÓN DE VISUALIZACIÓN DE CONTENIDO/SOLUCIONARIOS          </p>
+          <p class="main-color-text">NOTA: POR DEFECTO LA PLATAFORMA NO MUESTRA LOS SOLUCIONARIOS A LOS ALUMNOS. SI DESEA CAMBIAR EL MODO DE VISUALIZACIÓN SELECCIONE ESTA OPCIÓN.          </p>
+          <p>
+            <input type="checkbox" id="solucionarios"> <label for="solucionarios">VISUALIZAR SOLUCIONARIOS</label>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <p>OPCIÓN DE VISUALIZACIÓN DE CONTENIDO </p>
+          <p class="main-color-text">NOTA: POR DEFECTO LA PLATAFORMA NO MUESTRA LOS SOLUCIONARIOS A LOS ALUMNOS. SI DESEA CAMBIAR EL MODO DE VISUALIZACIÓN SELECCIONE ESTA OPCIÓN.
+          </p>
+          <p>
+            <input type="checkbox" id="contenidos"> <label for="contenidos">VISUALIZAR CONTENIDO POR UNIDAD</label>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <p>OPCIÓN DE VISUALIZACIÓN DE PRUEBAS EN LINEA</p>
+          <p class="main-color-text">NOTA: POR DEFECTO LA PLATAFORMA NO MUESTRA LOS SOLUCIONARIOS A LOS ALUMNOS. SI DESEA CAMBIAR EL MODO DE VISUALIZACIÓN SELECCIONE ESTA OPCIÓN.</p>
+          <p>
+            <input type="checkbox" id="PEL"> <label for="PEL"> VISUALIZAR PEL</label>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <p>OPCIÓN DE VISUALIZACIÓN DE CONTENIDO</p>
+          <p class="main-color-text">NOTA: POR DEFECTO LA PLATAFORMA NO MUESTRA LOS SOLUCIONARIOS A LOS ALUMNOS. SI DESEA CAMBIAR EL MODO DE VISUALIZACIÓN SELECCIONE ESTA OPCIÓN</p>
+          <p>
+            <input type="checkbox" id="UNIDAD"> <label for="UNIDAD">VISUALIZAR CONTENIDO POR UNIDAD</label>
+          </p>
+        </div>
+      </div>
+
+      <div style="padding: 50px 0;">
+        <p>IMÁGENES PARA CERTIFICADOS</p>
+        <p class="main-color-text">NOTA: SÓLO SE PERMITEN IMÁGENES EN FORMATO PNG, JPG Y GIF. SE RECOMIENDA EL USO DE PNG DE FONDO TRANSPARENTE.        </p>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <p>Firma Digitalizada Director </p>
+            <div class="firma">
+              <img src="https://placehold.co/140x140" alt="">
+            </div>
+            <a href="#" class="btn btn-action">Selecciona imagen</a>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <p>Firma Digitalizada Director </p>
+            <div class="firma">
+              <img src="https://placehold.co/140x140" alt="">
+            </div>
+            <a href="#" class="btn btn-action">Selecciona imagen</a>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <p>Firma Digitalizada Director </p>
+            <div class="firma">
+              <img src="https://placehold.co/140x140" alt="">
+            </div>
+            <a href="#" class="btn btn-action">Selecciona imagen</a>
+          </div>
+
+          <div style="max-width: 600px; margin: 20px auto;" class="d-grid gap-2">
+            <a href="#" class="btn btn-action">Guardar Datos Institucionales            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
